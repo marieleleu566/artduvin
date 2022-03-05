@@ -1,0 +1,38 @@
+h1 {
+font-family: Roc Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 40px;
+color: #997B66;
+}
+
+p {
+  font-family: Gopher;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+color: #240E0B;
+width: 70%;
+}
+
+.about-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px;
+}
+
+
+.about-photo {
+  margin-right: 100px;
+}
+
+.about-text {
+  span {
+    width: 167px;
+    height: 11px;
+    background: #F7E3DB;
+  }
+}
