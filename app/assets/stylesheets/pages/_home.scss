@@ -1,3 +1,53 @@
 body {
-  background: #FEFBF5;
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FEFBF5;
+}
+
+.title-info {
+  margin: 0px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  h1 {
+    font-family: 'Roc Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140px;
+    text-align: end;
+    color: #997B66;
+    @include from-medium-high {
+      font-size: 180px;
+    }
+  }
+  p {
+    font-family: 'Gopher';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    /* or 167% */
+    color: #997B66;
+  }
+  @include from-medium-high {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.home-photo {
+  max-width: 300px;
+}
+
+.home {
+  margin: 100px;
+}
+
+.home-line {
+  margin-top: 42px;
 }

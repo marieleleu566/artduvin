@@ -1,32 +1,51 @@
 .contact-text {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 160px;
+  margin-left: 0px;
   width: 100%;
+  @include from-medium-high {
+    margin: 0px 100px;
+  }
 }
 
 .contact-containter {
+  margin: 0px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  @include from-medium-high {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin: 0px 0px;
+  }
 }
 
 .contact-info {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  width: 75%;
-  margin-top: 100px;
+  width: 100%;
+  margin-top:64px;
+  @include from-medium-high {
+    width: 75%;
+    flex-direction: row;
+    margin-top:100px;
+
+  }
 }
 
 .address {
   p {
   width: 100%;
   font-family: Gopher;
-  font-size: 36px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: 45px;
@@ -35,15 +54,25 @@
   span {
     color: #CDCEB2;
   }
+  @include from-medium-high {
+      font-size: 36px;
+    }
   }
   .small-text {
-    font-size: 24px;
+    font-size: 16px;
+    @include from-medium-high {
+      font-size: 24px;
+    }
   }
 }
 
 .hours {
-  width: 50%;
+  width: 100%;
   z-index: 1000;
+  @include from-medium-high {
+    width: 50%;
+    margin-top: 0px;
+  }
 }
 
 .contact {
@@ -53,17 +82,41 @@
 }
 
 .contact-photo {
-  margin-right: 64px;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 24px;
+  @include from-medium-high {
+    margin-right: 64px;
+    margin-bottom: 0px;
+    width: 95%;
+  }
 }
 
 .line2 {
-  margin: 100px 100px 100px 250px;
+  z-index: 1000;
+  position: relative;
+  margin: 10px 32px;
+  @include from-medium-high {
+  margin: 94px 32px;
+  }
 }
 
 .blob {
   position: absolute;
   z-index: 100;
+  top: 375px;
+  left: 0;
+  img {
+    width:150px;
+  }
+  @include from-medium-high {
+  position: absolute;
+  z-index: 100;
   top: 25px;
+  img {
+    width: 300px;
+  }
+  }
 }
 
 

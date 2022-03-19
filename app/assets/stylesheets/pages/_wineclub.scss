@@ -1,7 +1,14 @@
 .wine-container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  justify-content: center;
+  @include from-medium-high {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  }
 }
 
 .wine-text {
@@ -9,6 +16,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .wine-header {
@@ -88,7 +96,14 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  @include from-medium-high {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 72px;
+  flex-direction: row;
+  }
 }
 
 .faq-questions {
@@ -123,5 +138,9 @@ width: 100%;
 }
 
 .faq-photo {
+  margin-left: 0px;
+  @include from-medium-high {
+    margin-left: 32px;
+  }
 }
 

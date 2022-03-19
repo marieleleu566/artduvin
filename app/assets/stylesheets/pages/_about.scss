@@ -14,19 +14,34 @@ font-weight: 300;
 font-size: 14px;
 line-height: 20px;
 color: #240E0B;
-width: 70%;
+width: 100% !important;
+@include from-medium-high {
+  width: 70%;
+}
 }
 
 .about-page {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   margin: 0px 100px;
+  @include from-medium-high {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 100px;
+  }
 }
 
 
 .about-photo {
-  margin-right: 100px;
+  margin-right: 0px;
+  @include from-medium-high {
+    margin-right: 100px;
+
+  }
 }
 
 .about-text {
