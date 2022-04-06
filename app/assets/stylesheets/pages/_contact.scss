@@ -102,19 +102,16 @@
 }
 
 .blob {
-  position: absolute;
+  position: fixed;
   z-index: 100;
-  top: 375px;
+  bottom:0;
   left: 0;
   img {
-    width:150px;
+    width:35vw;
   }
   @include from-medium-high {
-  position: absolute;
-  z-index: 100;
-  top: 25px;
-  img {
-    width: 300px;
+      img {
+    width:22vw;
   }
   }
 }
