@@ -4,6 +4,9 @@
       a {
     color: rgba(153,123,102,1);
     text-decoration: none;
+    &:hover {
+      color: #F0CBC1;
+    }
   }
   z-index: 1000;
   display: flex;
@@ -28,6 +31,7 @@
     &:hover {
       background-color: #DBD0C8;
       border-radius: 5px;
+      color:rgba(153,123,102,1);
     }
   }
 }
@@ -66,6 +70,7 @@
 
 /* Style navigation menu links */
 .topnav a {
+  font-siz:30px;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -98,3 +103,6 @@
   background-color: transparent;
   color: #DBD0C8;
 }
+
+
+

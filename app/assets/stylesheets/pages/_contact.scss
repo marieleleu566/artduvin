@@ -79,6 +79,13 @@
   p {
     width: 100%;
   }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color:#F0CBC1;
+    }
+  }
 }
 
 .contact-photo {
