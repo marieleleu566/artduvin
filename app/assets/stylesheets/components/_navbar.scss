@@ -70,7 +70,6 @@
 
 /* Style navigation menu links */
 .topnav a {
-  font-siz:30px;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -85,6 +84,7 @@
 
 /* Style the hamburger menu */
 .topnav a.icon {
+  font-size:30px;
   color: rgba(153,123,102,1);
   background: transparent;
   display: block;
