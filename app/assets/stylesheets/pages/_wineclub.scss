@@ -50,8 +50,31 @@ width: 100%;
 
 .wine-button {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  h3 {
+  font-family: 'Gopher';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  width: 100%;
+    span {
+    background: #F7E3DB;
+  }
+  }
+  a {
+    color: #624F41;
+    text-decoration: none;
+    &:hover {
+      color: #F0CBC1;
+    }
+  }
+  p {
+    text-align: center;
+  }
 }
 
 .button {
@@ -60,13 +83,13 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 25px;
+  padding: 8px 20px;
   a {
     color: white;
     font-family: 'Gopher';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
   }
   &:hover {

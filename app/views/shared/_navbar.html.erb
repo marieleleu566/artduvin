@@ -1,23 +1,28 @@
 <div class="navbar">
   <div class="menu">
   <div class="navbar-link">
-    <a href="/about">About</a>
+    <a class='menu-btn' href="/about">About</a>
   </div>
   <div class="navbar-link">
-    <a href="/contact">Contact</a>
+    <a class='menu-btn' href="/contact">Contact</a>
   </div>
   <div class="navbar-link">
     <a href="/"><%= image_tag 'logo.png', width:'80px', alt:'logo' %></a>
   </div>
   <div class="navbar-link">
-    <a href="/wineclub">Wine Club</a>
+    <a class='menu-btn' href="/wineclub">Wine Club</a>
   </div>
-  <div class="navbar-link">
-    <a class='menu-btn' href="https://www.toasttab.com/art-du-vin-long-beach-2027-e-4th-st" target='_blank'>Menu</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.toasttab.com/art-du-vin-long-beach-2027-e-4th-st" target='_blank'>Wine Selection</a>
+      <a href="https://www.toasttab.com/art-du-vin-long-beach-2027-e-4th-st/giftcards?utmCampaign=onlineOrdering" target='_blank'>Gift Card</a>
+    </div>
   </div>
   </div>
   <div class="social">
-      <div class='social-link'>
+    <div class='social-link'>
       <a href="https://www.instagram.com/artduvin/?hl=en" target='_blank'><%= image_tag 'insta.png', width:'20px', alt:'instagram' %></a>
     </div>
       <div class='social-link'>
@@ -39,6 +44,7 @@
     <a href="/contact">Contact</a>
     <a href="/wineclub">Wine Club</a>
     <a href="https://www.toasttab.com/art-du-vin-long-beach-2027-e-4th-st" target='_blank'>Menu</a>
+    <a href="https://www.toasttab.com/art-du-vin-long-beach-2027-e-4th-st/giftcards?utmCampaign=onlineOrdering" target='_blank'>Gift Card</a>
     <a href="https://www.instagram.com/artduvin/?hl=en" target='_blank'><%= image_tag 'insta.png', width:'20px', alt:'instagram'%></a>
     <a href="https://www.facebook.com/ArtDuVin/" target='_blank'><%= image_tag 'fb.png', width:'20px', alt:'facebook'%></a>
   </div>
